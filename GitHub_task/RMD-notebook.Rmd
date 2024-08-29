@@ -1,0 +1,45 @@
+---
+title: "RMD-notebook"
+output: html_document
+date: "2024-08-29"
+---
+
+## R Markdown
+
+#This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, #PDF, and MS Word documents. For more details on using R Markdown see #<http://rmarkdown.rstudio.com>.
+
+#When you click the **Knit** button a document will be generated that includes both content #as well as the output of any embedded R code chunks within the document. You can embed an R #code chunk like this:
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+data = c(-13, 19, -24, 30, 64, -53, 50, 31, -58, -34, -3, -34, 77, NA)
+
+mean_value <- mean(data, na.rm = TRUE)
+
+mean_value
+```
+
+```{r}
+data_1 = c(90.48, 31.16, 44.4, 21.94, 84.37, 53.15, 81.15, 47.86, 63.23, 46.75, 102.73)
+
+min_value <- min(data_1, na.rm = TRUE)
+
+min_value
+```
+
+```{r}
+data_2 = c(80.94, 44.46, 46.33, 65.1, 66.42, 104.43, 53.15, 48.41, 12.88, 51.1, 43.03, 40.3, 33.71, 55.1, 22.17)
+
+iqr_value <- IQR(data_2, na.rm = TRUE, type = 7)
+
+iqr_value
+```
+
+```{r}
+data_3 = c(47.44, 62.44, 20.44, 72.75, 77.86, 13.74, 28.2, 50.47, 59.19, 69.04)
+
+sr_value <- sd(data_3)/sqrt(length(data_3))
+
+sr_value
+```
