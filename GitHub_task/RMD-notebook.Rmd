@@ -35,4 +35,9 @@ iqr_value <- IQR(data_2, na.rm = TRUE, type = 7)
 
 iqr_value
 ```
+data_4 = c(80, 44, 46, 65, 66, 104.43, 53.15, 48.41, NA, NA, 12.88, 51.1, 43.03, 40.3, 33.71, 55.1, 22.17)
 
+iqr_value <- IQR(data_4, na.rm = TRUE, type = 7)
+
+iqr_value
+```
